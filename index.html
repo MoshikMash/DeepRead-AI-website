@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepRead AI — AI Tutor for Deep Understanding of Books</title>
+  <meta name="description" content="DeepRead AI turns books into personalized learning experiences. An AI reading tutor that teaches you how to truly understand complex texts — step by step.">
+  <meta property="og:title" content="DeepRead AI — AI Tutor for Deep Understanding of Books">
+  <meta property="og:description" content="Stop summarizing. Start understanding. AI-powered personalized reading tutor for books.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">📖</span>
+        <span class="logo-text">DeepRead <span class="logo-ai">AI</span></span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#features">Features</a>
+        <a href="#team">Team</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#waitlist" class="nav-cta">Join Waitlist</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-elements">
+      <div class="floating-book book-1"></div>
+      <div class="floating-book book-2"></div>
+      <div class="floating-book book-3"></div>
+      <div class="hero-glow"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge fade-up">
+        <span class="badge-dot"></span>
+        Building the future of reading
+      </div>
+      <h1 class="hero-title fade-up delay-1">
+        Don't just read books.<br>
+        <span class="gradient-text">Truly understand them.</span>
+      </h1>
+      <p class="hero-subtitle fade-up delay-2">
+        DeepRead AI is a personalized AI tutor that teaches you how to deeply understand 
+        complex books — philosophy, history, theology, economics, and more — step by step, 
+        at your level.
+      </p>
+      <div class="hero-actions fade-up delay-3">
+        <a href="#waitlist" class="btn btn-primary btn-lg">
+          Join the Waitlist
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#how-it-works" class="btn btn-ghost btn-lg">
+          See How It Works
+        </a>
+      </div>
+      <div class="hero-stats fade-up delay-4">
+        <div class="stat">
+          <span class="stat-icon">🎓</span>
+          <div>
+            <span class="stat-value">PhD + MBA</span>
+            <span class="stat-label">Founding Team</span>
+          </div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-icon">🧠</span>
+          <div>
+            <span class="stat-value">15+ Years</span>
+            <span class="stat-label">AI Research</span>
+          </div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-icon">📚</span>
+          <div>
+            <span class="stat-value">CMU & BGU</span>
+            <span class="stat-label">Research Heritage</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section class="problem-section" id="problem">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">The Problem</span>
+        <h2 class="section-title">People don't need <em>summaries</em>.<br>They need <span class="gradient-text">understanding</span>.</h2>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-card fade-up">
+          <div class="problem-icon">😔</div>
+          <h3>Readers Give Up</h3>
+          <p>Millions of motivated people start complex books every year — philosophy, economics, theology — and quit partway through. Not because they're not smart enough, but because they lack adaptive guidance.</p>
+        </div>
+        <div class="problem-card fade-up delay-1">
+          <div class="problem-icon">📋</div>
+          <h3>Summaries Don't Teach</h3>
+          <p>Tools like Blinkist, ChatGPT, and NotebookLM summarize or answer questions — but they don't build real comprehension. Reading a summary is not the same as understanding the text.</p>
+        </div>
+        <div class="problem-card fade-up delay-2">
+          <div class="problem-icon">🎯</div>
+          <h3>One Size Fits None</h3>
+          <p>Traditional study guides and generic AI chatbots can't adapt to your unique background, knowledge gaps, or learning style. Everyone gets the same explanation regardless of what they actually need.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Section -->
+  <section class="solution-section" id="solution">
+    <div class="container">
+      <div class="solution-content">
+        <div class="solution-text fade-up">
+          <span class="section-tag">Our Approach</span>
+          <h2 class="section-title">An AI tutor that <span class="gradient-text">actually teaches</span></h2>
+          <p class="solution-desc">
+            DeepRead AI doesn't give you the answers — it teaches you how to find them. 
+            Like having a brilliant private tutor who knows exactly where you're struggling 
+            and adapts in real time.
+          </p>
+          <div class="solution-loop">
+            <div class="loop-step">
+              <span class="loop-num">1</span>
+              <div>
+                <strong>Explain</strong>
+                <p>Passages broken down at your level with examples from your world</p>
+              </div>
+            </div>
+            <div class="loop-arrow">→</div>
+            <div class="loop-step">
+              <span class="loop-num">2</span>
+              <div>
+                <strong>Test</strong>
+                <p>Checks your understanding with targeted questions</p>
+              </div>
+            </div>
+            <div class="loop-arrow">→</div>
+            <div class="loop-step">
+              <span class="loop-num">3</span>
+              <div>
+                <strong>Diagnose</strong>
+                <p>Identifies exactly where comprehension breaks down</p>
+              </div>
+            </div>
+            <div class="loop-arrow">→</div>
+            <div class="loop-step">
+              <span class="loop-num">4</span>
+              <div>
+                <strong>Re-teach</strong>
+                <p>Adapts and re-explains until you truly "get it"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solution-visual fade-up delay-1">
+          <div class="demo-window">
+            <div class="demo-header">
+              <div class="demo-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="demo-title">DeepRead AI — Reading Session</span>
+            </div>
+            <div class="demo-body">
+              <div class="demo-book-text">
+                <p class="demo-passage">"The unexamined life is not worth living." <span class="demo-source">— Plato, Apology</span></p>
+              </div>
+              <div class="demo-chat">
+                <div class="chat-msg tutor">
+                  <span class="chat-avatar">🤖</span>
+                  <div class="chat-bubble">
+                    Socrates isn't saying life has no value — he's saying that <strong>reflection</strong> is what gives life meaning. Think of it like this: imagine eating an incredible meal but never tasting it. That's what an unexamined life is like.
+                  </div>
+                </div>
+                <div class="chat-msg tutor">
+                  <span class="chat-avatar">🤖</span>
+                  <div class="chat-bubble">
+                    Why do you think Socrates says this at his trial, facing death? What does that tell us about his values?
+                  </div>
+                </div>
+                <div class="chat-msg user">
+                  <div class="chat-bubble">
+                    Maybe because he'd rather die than stop questioning things?
+                  </div>
+                  <span class="chat-avatar">👤</span>
+                </div>
+                <div class="chat-msg tutor">
+                  <span class="chat-avatar">🤖</span>
+                  <div class="chat-bubble">
+                    Exactly! For Socrates, the pursuit of truth and self-knowledge is more important than survival itself. That's the core of his philosophy. You're getting it. ✨
+                  </div>
+                </div>
+              </div>
+              <div class="demo-input">
+                <div class="demo-input-field">Ask a question or continue reading...</div>
+                <div class="demo-input-actions">
+                  <button class="demo-voice-btn" title="Voice mode">🎤</button>
+                  <button class="demo-send-btn" title="Send">→</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-section" id="how-it-works">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">How It Works</span>
+        <h2 class="section-title">From book to <span class="gradient-text">mastery</span></h2>
+        <p class="section-subtitle">Three simple steps to transform how you read</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card fade-up">
+          <div class="step-number">01</div>
+          <div class="step-icon-wrap">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="8" y="6" width="32" height="36" rx="4" stroke="currentColor" stroke-width="2.5"/><path d="M16 16h16M16 24h16M16 32h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Upload Your Book</h3>
+          <p>Choose any book — philosophy, history, theology, economics, or any complex text. Upload it and start your guided reading journey.</p>
+        </div>
+        <div class="step-card fade-up delay-1">
+          <div class="step-number">02</div>
+          <div class="step-icon-wrap">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2.5"/><path d="M24 16v8l5 5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 8l2 4M30 8l-2 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Learn at Your Pace</h3>
+          <p>The AI tutor guides you passage by passage — explaining, questioning, and adapting to your level. Chat by text or voice in real time.</p>
+        </div>
+        <div class="step-card fade-up delay-2">
+          <div class="step-number">03</div>
+          <div class="step-icon-wrap">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M12 24l8 8 16-16" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2.5"/></svg>
+          </div>
+          <h3>Build Real Mastery</h3>
+          <p>Track your comprehension growth. Over time, become a stronger, more confident reader — not just someone who finished a book.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Features</span>
+        <h2 class="section-title">Everything you need to <span class="gradient-text">read deeply</span></h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card fade-up">
+          <div class="feature-icon">🎯</div>
+          <h3>Personalized Explanations</h3>
+          <p>Every passage explained at your level, with analogies and examples drawn from your background and interests.</p>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon">🗣️</div>
+          <h3>Voice Interaction</h3>
+          <p>Have a real conversation with your tutor. Listen to passages read aloud, ask questions by voice, and learn through dialogue.</p>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon">✅</div>
+          <h3>Comprehension Checks</h3>
+          <p>The tutor tests your understanding as you go — not to grade you, but to identify gaps and re-teach where needed.</p>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon">📈</div>
+          <h3>Progress Tracking</h3>
+          <p>See your reading comprehension improve over time with detailed insights into your strengths and growth areas.</p>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon">🧭</div>
+          <h3>Guided Reading Paths</h3>
+          <p>A structured journey through each book — like a private class with a brilliant professor who adapts to your pace.</p>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon">🔄</div>
+          <h3>Adaptive Re-teaching</h3>
+          <p>When you're stuck, the tutor doesn't repeat — it finds a new way to explain, with different examples and angles until it clicks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who It's For -->
+  <section class="audience-section" id="audience">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Who It's For</span>
+        <h2 class="section-title">Built for anyone who wants to <span class="gradient-text">read smarter</span></h2>
+      </div>
+      <div class="audience-grid">
+        <div class="audience-card fade-up">
+          <div class="audience-icon">📚</div>
+          <h3>Lifelong Learners</h3>
+          <p>You're curious and ambitious. You want to tackle Plato, Adam Smith, or Kierkegaard — but the text is dense and you need guidance.</p>
+        </div>
+        <div class="audience-card fade-up">
+          <div class="audience-icon">🎒</div>
+          <h3>Students</h3>
+          <p>Struggling with assigned readings? Get a tutor that explains difficult texts at your level and helps you prepare for class.</p>
+        </div>
+        <div class="audience-card fade-up">
+          <div class="audience-icon">👨‍👩‍👧‍👦</div>
+          <h3>Families & Homeschoolers</h3>
+          <p>Give your children (and yourself) a world-class reading tutor. Build comprehension skills that last a lifetime.</p>
+        </div>
+        <div class="audience-card fade-up">
+          <div class="audience-icon">🌍</div>
+          <h3>ESL Learners</h3>
+          <p>English is your second language? Read and understand complex English texts with patient, adaptive explanations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section" id="team">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">The Team</span>
+        <h2 class="section-title">Built by <span class="gradient-text">researchers and educators</span></h2>
+        <p class="section-subtitle">A founding team with 15+ years of AI research and hands-on teaching experience</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card fade-up">
+          <div class="team-photo-wrap">
+            <img src="images/moshe.png" alt="Moshe Mash, Ph.D." class="team-photo">
+          </div>
+          <div class="team-info">
+            <h3>Moshe Mash, Ph.D.</h3>
+            <span class="team-role">Co-Founder & CTO</span>
+            <p class="team-bio">
+              AI researcher with 15+ years of experience in machine learning, NLP, and human-centric AI systems. 
+              Postdoctoral researcher at <strong>Carnegie Mellon University's Robotics Institute</strong>. 
+              Ph.D. from Ben-Gurion University. Published in top venues including JACM, CHI, EC, and Science Translational Medicine. 
+              Best Paper Award at ACM EC. Built real-world AI systems at CMU, Amdocs, and Diagnostic Robotics.
+            </p>
+            <div class="team-tags">
+              <span>AI/ML</span>
+              <span>NLP</span>
+              <span>Human-Centric AI</span>
+              <span>CMU</span>
+            </div>
+            <div class="team-links">
+              <a href="https://moshemash.com/" target="_blank" rel="noopener">Website</a>
+              <a href="https://www.linkedin.com/in/moshe-mash-95782434" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+        <div class="team-card fade-up delay-1">
+          <div class="team-photo-wrap">
+            <img src="images/shosh.png" alt="Shosh Mash, MBA" class="team-photo">
+          </div>
+          <div class="team-info">
+            <h3>Shosh Mash, MBA</h3>
+            <span class="team-role">Co-Founder & Head of Education</span>
+            <p class="team-bio">
+              Certified educator with many years of experience teaching high school, middle school, and elementary students 
+              at all levels — including extensive work with students with learning disabilities, achieving remarkable results 
+              in individual growth and academic excellence. MBA in Economics, former 
+              <strong>AI Associate Researcher at Carnegie Mellon University</strong>. 
+              Expert in instructional design, learning methodology, and evaluating learning outcomes. 
+              Bridges the gap between cutting-edge AI and real human learning needs.
+            </p>
+            <div class="team-tags">
+              <span>Education</span>
+              <span>Pedagogy</span>
+              <span>UX Research</span>
+              <span>CMU</span>
+            </div>
+            <div class="team-links">
+              <a href="https://mashinnovateai.com/the-team/" target="_blank" rel="noopener">About</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-credentials fade-up">
+        <h3>Research & Recognition</h3>
+        <div class="credentials-grid">
+          <div class="credential">
+            <span class="credential-icon">🏆</span>
+            <div>
+              <strong>Best Paper Award</strong>
+              <p>ACM Conference on Economics & Computation</p>
+            </div>
+          </div>
+          <div class="credential">
+            <span class="credential-icon">📄</span>
+            <div>
+              <strong>Published in Top Venues</strong>
+              <p>JACM, CHI, AAAI, IJCAI, AIG, AAMAS, Science Translational Medicine</p>
+            </div>
+          </div>
+          <div class="credential">
+            <span class="credential-icon">🎓</span>
+            <div>
+              <strong>Carnegie Mellon University</strong>
+              <p>Both founders researched at CMU's CS & Robotics departments</p>
+            </div>
+          </div>
+          <div class="credential">
+            <span class="credential-icon">⭐</span>
+            <div>
+              <strong>Excellence in Teaching</strong>
+              <p>Awards at Ben-Gurion University, 2016 & 2017</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Pricing</span>
+        <h2 class="section-title">Invest in <span class="gradient-text">real understanding</span></h2>
+        <p class="section-subtitle">Less than the cost of a single tutoring session per month</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card fade-up">
+          <div class="pricing-header">
+            <h3>Individual</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$20</span>
+              <span class="price-period">/month</span>
+            </div>
+            <p class="pricing-desc">Perfect for self-learners and students</p>
+          </div>
+          <ul class="pricing-features">
+            <li>Unlimited book uploads</li>
+            <li>Personalized AI tutoring</li>
+            <li>Voice interaction</li>
+            <li>Comprehension tracking</li>
+            <li>Guided reading paths</li>
+          </ul>
+          <a href="#waitlist" class="btn btn-outline btn-block">Join Waitlist</a>
+        </div>
+        <div class="pricing-card featured fade-up delay-1">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3>Family</h3>
+            <div class="pricing-price">
+              <span class="price-amount">$35</span>
+              <span class="price-period">/month</span>
+            </div>
+            <p class="pricing-desc">For families and homeschoolers</p>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Individual</li>
+            <li>Up to 5 family members</li>
+            <li>Parent dashboard</li>
+            <li>Individual progress per reader</li>
+            <li>Age-appropriate adaptations</li>
+          </ul>
+          <a href="#waitlist" class="btn btn-primary btn-block">Join Waitlist</a>
+        </div>
+        <div class="pricing-card fade-up delay-2">
+          <div class="pricing-header">
+            <h3>Institution</h3>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+            <p class="pricing-desc">Schools, universities & organizations</p>
+          </div>
+          <ul class="pricing-features">
+            <li>Everything in Family</li>
+            <li>Unlimited seats</li>
+            <li>Admin dashboard & analytics</li>
+            <li>Curriculum integration</li>
+            <li>Dedicated support</li>
+          </ul>
+          <a href="#waitlist" class="btn btn-outline btn-block">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Waitlist Section -->
+  <section class="cta-section" id="waitlist">
+    <div class="container">
+      <div class="cta-content fade-up">
+        <h2>Ready to read with <span class="gradient-text">real understanding</span>?</h2>
+        <p>Join our waitlist and be the first to experience DeepRead AI when we launch.</p>
+        <form class="waitlist-form" id="waitlistForm">
+          <div class="form-row">
+            <input type="email" placeholder="Enter your email address" required id="waitlistEmail">
+            <button type="submit" class="btn btn-primary btn-lg">
+              Join Waitlist
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+          <p class="form-note">No spam. We'll only notify you when DeepRead AI is ready.</p>
+        </form>
+        <div class="waitlist-success" id="waitlistSuccess" style="display:none;">
+          <div class="success-icon">✨</div>
+          <h3>You're on the list!</h3>
+          <p>We'll reach out when DeepRead AI is ready for you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon">📖</span>
+            <span class="logo-text">DeepRead <span class="logo-ai">AI</span></span>
+          </a>
+          <p>AI tutor for deep understanding of books.<br>Built in Pittsburgh, PA.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#team">Team</a>
+            <a href="https://mashinnovateai.com/" target="_blank" rel="noopener">MashInnovateAI</a>
+            <a href="https://moshemash.com/" target="_blank" rel="noopener">Research</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <a href="mailto:moshikmash@gmail.com">moshikmash@gmail.com</a>
+            <a href="tel:+14126261676">+1-412-626-1676</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 DeepRead AI. All rights reserved.</p>
+        <p>A <a href="https://mashinnovateai.com/" target="_blank" rel="noopener">MashInnovateAI</a> product.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
