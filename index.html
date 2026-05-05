@@ -65,31 +65,6 @@
           See How It Works
         </a>
       </div>
-      <div class="hero-stats fade-up delay-4">
-        <div class="stat">
-          <span class="stat-icon">🎓</span>
-          <div>
-            <span class="stat-value">PhD + MBA</span>
-            <span class="stat-label">Founding Team</span>
-          </div>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-icon">🧠</span>
-          <div>
-            <span class="stat-value">15+ Years</span>
-            <span class="stat-label">AI Research</span>
-          </div>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-icon">📚</span>
-          <div>
-            <span class="stat-value">CMU & BGU</span>
-            <span class="stat-label">Research Heritage</span>
-          </div>
-        </div>
-      </div>
     </div>
     <div class="hero-scroll-indicator">
       <div class="scroll-line"></div>
@@ -131,87 +106,311 @@
           <span class="section-tag">Our Approach</span>
           <h2 class="section-title">An AI tutor that <span class="gradient-text">actually teaches</span></h2>
           <p class="solution-desc">
-            DeepRead AI doesn't give you the answers — it teaches you how to find them. 
-            Like having a brilliant private tutor who knows exactly where you're struggling 
+            DeepRead AI doesn't give you the answers — it teaches you how to find them.
+            Like having a brilliant private tutor who knows exactly where you're struggling
             and adapts in real time.
           </p>
-          <div class="solution-loop">
-            <div class="loop-step">
-              <span class="loop-num">1</span>
-              <div>
-                <strong>Explain</strong>
-                <p>Passages broken down at your level with examples from your world</p>
-              </div>
+        </div>
+        <div class="solution-loop fade-up delay-1">
+          <div class="loop-step">
+            <span class="loop-num">1</span>
+            <div>
+              <strong>Explain</strong>
+              <p>Passages broken down at your level with examples from your world</p>
             </div>
-            <div class="loop-arrow">→</div>
-            <div class="loop-step">
-              <span class="loop-num">2</span>
-              <div>
-                <strong>Test</strong>
-                <p>Checks your understanding with targeted questions</p>
-              </div>
+          </div>
+          <div class="loop-arrow">→</div>
+          <div class="loop-step">
+            <span class="loop-num">2</span>
+            <div>
+              <strong>Test</strong>
+              <p>Checks your understanding with targeted questions</p>
             </div>
-            <div class="loop-arrow">→</div>
-            <div class="loop-step">
-              <span class="loop-num">3</span>
-              <div>
-                <strong>Diagnose</strong>
-                <p>Identifies exactly where comprehension breaks down</p>
-              </div>
+          </div>
+          <div class="loop-arrow">→</div>
+          <div class="loop-step">
+            <span class="loop-num">3</span>
+            <div>
+              <strong>Diagnose</strong>
+              <p>Identifies exactly where comprehension breaks down</p>
             </div>
-            <div class="loop-arrow">→</div>
-            <div class="loop-step">
-              <span class="loop-num">4</span>
-              <div>
-                <strong>Re-teach</strong>
-                <p>Adapts and re-explains until you truly "get it"</p>
-              </div>
+          </div>
+          <div class="loop-arrow">→</div>
+          <div class="loop-step">
+            <span class="loop-num">4</span>
+            <div>
+              <strong>Re-teach</strong>
+              <p>Adapts and re-explains until you truly "get it"</p>
             </div>
           </div>
         </div>
-        <div class="solution-visual fade-up delay-1">
+        <div class="solution-visual fade-up delay-2">
           <div class="demo-window">
             <div class="demo-header">
               <div class="demo-dots">
                 <span></span><span></span><span></span>
               </div>
-              <span class="demo-title">DeepRead AI — Reading Session</span>
+              <div class="demo-tabs">
+                <button class="demo-tab active" data-demo="plato">📚 Plato's Apology</button>
+                <button class="demo-tab" data-demo="shoftim">📜 Shoftim</button>
+              </div>
+              <div class="demo-chapter-badge" id="demoBadge">Ch. 3 / 12</div>
             </div>
-            <div class="demo-body">
-              <div class="demo-book-text">
-                <p class="demo-passage">"The unexamined life is not worth living." <span class="demo-source">— Plato, Apology</span></p>
+            <div class="demo-split" id="demo-plato">
+              <!-- Knowledge Map Panel -->
+              <div class="demo-map-panel">
+                <div class="demo-map-title">🗺 Knowledge Map</div>
+                <svg class="concept-map" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="100" y1="100" x2="100" y2="45" class="node-edge node-edge-mastered"/>
+                  <line x1="100" y1="100" x2="148" y2="72" class="node-edge node-edge-mastered"/>
+                  <line x1="100" y1="100" x2="148" y2="128" class="node-edge node-edge-mastered"/>
+                  <line x1="100" y1="100" x2="100" y2="155" class="node-edge node-edge-active"/>
+                  <line x1="100" y1="100" x2="52" y2="128" class="node-edge node-edge-pending"/>
+                  <line x1="100" y1="100" x2="52" y2="72" class="node-edge node-edge-pending"/>
+                  <circle cx="100" cy="45" r="14" class="node-mastered-circle demo-clickable" data-demo="plato" data-key="virtue"/>
+                  <text x="100" y="45" class="node-label" style="pointer-events:none">Virtue</text>
+                  <circle cx="148" cy="72" r="14" class="node-mastered-circle demo-clickable" data-demo="plato" data-key="knowledge"/>
+                  <text x="148" y="72" class="node-label" style="pointer-events:none">Knowledge</text>
+                  <circle cx="148" cy="128" r="14" class="node-mastered-circle demo-clickable" data-demo="plato" data-key="piety"/>
+                  <text x="148" y="128" class="node-label" style="pointer-events:none">Piety</text>
+                  <circle cx="100" cy="155" r="14" class="node-current-circle demo-clickable" data-demo="plato" data-key="soul"/>
+                  <text x="100" y="155" class="node-label" style="pointer-events:none">The Soul</text>
+                  <circle cx="52" cy="128" r="14" class="node-pending-circle demo-clickable" data-demo="plato" data-key="justice"/>
+                  <text x="52" y="128" class="node-label node-label-pending" style="pointer-events:none">Justice</text>
+                  <circle cx="52" cy="72" r="14" class="node-pending-circle demo-clickable" data-demo="plato" data-key="death"/>
+                  <text x="52" y="72" class="node-label node-label-pending" style="pointer-events:none">Death</text>
+                  <circle cx="100" cy="100" r="18" class="node-center-circle demo-clickable" data-demo="plato" data-key="socrates"/>
+                  <text x="100" y="100" class="node-center-label" style="pointer-events:none">Socrates</text>
+                </svg>
+                <div class="demo-diagrams-wrap" id="platoDiagramWrap">
+                  <div class="concept-legend">
+                    <div class="legend-item"><span class="legend-dot mastered"></span>Mastered</div>
+                    <div class="legend-item"><span class="legend-dot current"></span>Reading now</div>
+                    <div class="legend-item"><span class="legend-dot pending"></span>Upcoming</div>
+                  </div>
+                  <div class="demo-chapter-map">
+                    <div class="demo-map-title">💡 Ch. 3 — Core Concepts</div>
+                    <svg class="chapter-concept-map" viewBox="0 0 190 145" xmlns="http://www.w3.org/2000/svg">
+                      <line x1="95" y1="22" x2="32" y2="79" class="cmap-edge"/>
+                      <line x1="95" y1="22" x2="158" y2="79" class="cmap-edge"/>
+                      <line x1="32" y1="79" x2="95" y2="128" class="cmap-edge"/>
+                      <line x1="158" y1="79" x2="95" y2="128" class="cmap-edge"/>
+                      <line x1="32" y1="79" x2="158" y2="79" class="cmap-edge cmap-edge-dim"/>
+                      <circle cx="95" cy="22" r="16" class="cmap-node-primary demo-clickable" data-demo="plato" data-key="ch3-virtue"/>
+                      <text x="95" y="22" class="cmap-label" style="pointer-events:none">Virtue</text>
+                      <circle cx="32" cy="79" r="16" class="cmap-node-accent demo-clickable" data-demo="plato" data-key="ch3-duty"/>
+                      <text x="32" y="79" class="cmap-label" style="pointer-events:none">Duty</text>
+                      <circle cx="158" cy="79" r="16" class="cmap-node-accent demo-clickable" data-demo="plato" data-key="ch3-truth"/>
+                      <text x="158" y="79" class="cmap-label" style="pointer-events:none">Truth</text>
+                      <circle cx="95" cy="128" r="16" class="cmap-node-warm demo-clickable" data-demo="plato" data-key="ch3-good"/>
+                      <text x="95" y="128" class="cmap-label" style="pointer-events:none">The Good</text>
+                    </svg>
+                  </div>
+                  <div class="demo-book-timeline">
+                    <div class="demo-map-title">📅 Book Progress</div>
+                    <svg class="book-timeline-svg" viewBox="0 0 190 68" xmlns="http://www.w3.org/2000/svg">
+                      <line x1="18" y1="30" x2="95" y2="30" class="tl-line-done"/>
+                      <line x1="95" y1="30" x2="135" y2="30" class="tl-line-pending"/>
+                      <line x1="135" y1="30" x2="172" y2="30" class="tl-line-far"/>
+                      <text x="18" y="16" class="tl-chapter">§1</text>
+                      <text x="55" y="16" class="tl-chapter">§2</text>
+                      <text x="95" y="16" class="tl-chapter">§3</text>
+                      <text x="135" y="16" class="tl-chapter">§4</text>
+                      <text x="172" y="16" class="tl-chapter">§5</text>
+                      <circle cx="18" cy="30" r="8" class="tl-node-done demo-clickable" data-demo="plato" data-key="tl-opening"/>
+                      <circle cx="55" cy="30" r="8" class="tl-node-done demo-clickable" data-demo="plato" data-key="tl-defense"/>
+                      <circle cx="95" cy="30" r="10" class="tl-node-current demo-clickable" data-demo="plato" data-key="tl-examined"/>
+                      <circle cx="135" cy="30" r="7" class="tl-node-pending demo-clickable" data-demo="plato" data-key="tl-jury"/>
+                      <circle cx="172" cy="30" r="7" class="tl-node-far demo-clickable" data-demo="plato" data-key="tl-sentence"/>
+                      <text x="18" y="50" class="tl-label">Opening</text>
+                      <text x="55" y="50" class="tl-label">Defense</text>
+                      <text x="95" y="50" class="tl-label tl-label-current">Examined</text>
+                      <text x="135" y="50" class="tl-label tl-label-dim">Jury</text>
+                      <text x="172" y="50" class="tl-label tl-label-far">Sentence</text>
+                    </svg>
+                  </div>
+                </div>
+                <div class="demo-node-card" id="platoNodeCard" style="display:none">
+                  <button class="node-card-back" data-target="platoDiagramWrap">← back</button>
+                  <div class="node-card-title"></div>
+                  <div class="node-card-body"></div>
+                </div>
+                <div class="demo-comp-section">
+                  <div class="comp-label-row">
+                    <span>Comprehension</span>
+                    <span class="comp-pct">74%</span>
+                  </div>
+                  <div class="comp-bar-track">
+                    <div class="comp-bar-fill" style="width:74%"></div>
+                  </div>
+                  <div class="demo-read-stats">
+                    <span>📖 3 of 12 chapters</span>
+                    <span>⏱ ~45 min today</span>
+                  </div>
+                </div>
               </div>
-              <div class="demo-chat">
-                <div class="chat-msg tutor">
-                  <span class="chat-avatar">🤖</span>
-                  <div class="chat-bubble">
-                    Socrates isn't saying life has no value — he's saying that <strong>reflection</strong> is what gives life meaning. Think of it like this: imagine eating an incredible meal but never tasting it. That's what an unexamined life is like.
+              <!-- Chat Panel -->
+              <div class="demo-chat-panel">
+                <div class="demo-book-text">
+                  <div class="passage-nav">
+                    <button class="passage-prev" data-demo="plato" title="Previous passage">←</button>
+                    <span class="passage-counter" id="platoCounter">§ 1 of 4</span>
+                    <button class="passage-next" data-demo="plato" title="Next passage">Next passage →</button>
+                  </div>
+                  <p class="demo-passage" id="platoPassage">"I was attached to this city by the god, as upon a great horse, somewhat sluggish because of its great size, and needing to be aroused by a sort of gadfly."</p>
+                  <span class="demo-source" id="platoSource">— Plato, Apology · Ch. 3, §1</span>
+                </div>
+                <div class="demo-chat" id="platoChat">
+                  <div class="chat-msg tutor">
+                    <span class="chat-avatar">🤖</span>
+                    <div class="chat-bubble">
+                      <span class="chat-insight-tag">🔍 Metaphor alert</span>
+                      Socrates compares Athens to a large, sluggish horse — and himself to the gadfly sent by god to sting it awake. This is his defense of why he never stops questioning. Without the irritation, the horse just sleeps.
+                    </div>
+                  </div>
+                  <div class="chat-msg user">
+                    <div class="chat-bubble">So he sees himself as annoying on purpose?</div>
+                    <span class="chat-avatar">👤</span>
+                  </div>
+                  <div class="chat-msg tutor">
+                    <span class="chat-avatar">🤖</span>
+                    <div class="chat-bubble">
+                      <span class="chat-insight-tag">✅ Exactly</span>
+                      Deliberately annoying — and divinely commissioned. He's not claiming to be wise; he's claiming to be <em>useful</em>. The city needs someone who won't let it drift into comfortable ignorance. Ready to read on?
+                    </div>
                   </div>
                 </div>
-                <div class="chat-msg tutor">
-                  <span class="chat-avatar">🤖</span>
-                  <div class="chat-bubble">
-                    Why do you think Socrates says this at his trial, facing death? What does that tell us about his values?
-                  </div>
-                </div>
-                <div class="chat-msg user">
-                  <div class="chat-bubble">
-                    Maybe because he'd rather die than stop questioning things?
-                  </div>
-                  <span class="chat-avatar">👤</span>
-                </div>
-                <div class="chat-msg tutor">
-                  <span class="chat-avatar">🤖</span>
-                  <div class="chat-bubble">
-                    Exactly! For Socrates, the pursuit of truth and self-knowledge is more important than survival itself. That's the core of his philosophy. You're getting it. ✨
+                <div class="demo-input">
+                  <div class="demo-input-field" id="platoInputField">Ask about this passage...</div>
+                  <div class="demo-input-actions">
+                    <button class="demo-voice-btn" title="Voice mode">🎤</button>
+                    <button class="demo-send-btn" data-demo="plato" title="Send">→</button>
                   </div>
                 </div>
               </div>
-              <div class="demo-input">
-                <div class="demo-input-field">Ask a question or continue reading...</div>
-                <div class="demo-input-actions">
-                  <button class="demo-voice-btn" title="Voice mode">🎤</button>
-                  <button class="demo-send-btn" title="Send">→</button>
+            </div>
+            <!-- Shoftim Demo -->
+            <div class="demo-split" id="demo-shoftim" style="display:none">
+              <div class="demo-map-panel">
+                <div class="demo-map-title">🗺 Character Map</div>
+                <svg class="concept-map" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="100" y1="45" x2="42" y2="110" class="node-edge node-edge-mastered"/>
+                  <line x1="100" y1="45" x2="158" y2="110" class="node-edge" style="stroke:rgba(167,139,250,0.4);stroke-dasharray:4 2"/>
+                  <line x1="42" y1="110" x2="100" y2="168" class="node-edge" style="stroke:rgba(239,68,68,0.35)"/>
+                  <line x1="158" y1="110" x2="100" y2="168" class="node-edge node-edge-active"/>
+                  <circle cx="100" cy="168" r="14" class="node-enemy-circle demo-clickable" data-demo="shoftim" data-key="sisera"/>
+                  <text x="100" y="168" class="node-label" style="pointer-events:none">Sisera</text>
+                  <circle cx="42" cy="110" r="14" class="node-mastered-circle demo-clickable" data-demo="shoftim" data-key="barak"/>
+                  <text x="42" y="110" class="node-label" style="pointer-events:none">Barak</text>
+                  <circle cx="158" cy="110" r="14" class="demo-clickable" style="fill:rgba(167,139,250,0.2);stroke:#a78bfa;stroke-width:1.5;cursor:pointer" data-demo="shoftim" data-key="yael"/>
+                  <text x="158" y="110" class="node-label" style="pointer-events:none">Yael</text>
+                  <circle cx="100" cy="45" r="18" class="node-center-circle demo-clickable" data-demo="shoftim" data-key="deborah"/>
+                  <text x="100" y="45" class="node-center-label" style="pointer-events:none">Deborah</text>
+                </svg>
+                <div class="demo-diagrams-wrap" id="shoftimDiagramWrap">
+                  <div class="concept-legend">
+                    <div class="legend-item"><span class="legend-dot" style="background:#818cf8"></span>Judge</div>
+                    <div class="legend-item"><span class="legend-dot mastered"></span>Ally</div>
+                    <div class="legend-item"><span class="legend-dot" style="background:#ef4444;opacity:0.8"></span>Enemy</div>
+                  </div>
+                  <div class="demo-chapter-map">
+                    <div class="demo-map-title">⚔ Ch. 4 — Event Flow</div>
+                    <svg class="chapter-concept-map" viewBox="0 0 190 112" xmlns="http://www.w3.org/2000/svg">
+                      <line x1="25" y1="22" x2="95" y2="22" class="cmap-edge"/>
+                      <line x1="95" y1="22" x2="165" y2="22" class="cmap-edge"/>
+                      <line x1="165" y1="22" x2="60" y2="88" class="cmap-edge"/>
+                      <line x1="60" y1="88" x2="150" y2="88" class="cmap-edge"/>
+                      <circle cx="25" cy="22" r="16" class="cmap-node-danger demo-clickable" data-demo="shoftim" data-key="canaan"/>
+                      <text x="25" y="22" class="cmap-label" style="pointer-events:none">Canaan</text>
+                      <circle cx="95" cy="22" r="16" class="cmap-node-primary demo-clickable" data-demo="shoftim" data-key="ev-deborah"/>
+                      <text x="95" y="22" class="cmap-label" style="pointer-events:none">Deborah</text>
+                      <circle cx="165" cy="22" r="16" class="cmap-node-event demo-clickable" data-demo="shoftim" data-key="ev-battle"/>
+                      <text x="165" y="22" class="cmap-label" style="pointer-events:none">Battle</text>
+                      <circle cx="60" cy="88" r="16" class="cmap-node-warm demo-clickable" data-demo="shoftim" data-key="ev-flees"/>
+                      <text x="60" y="88" class="cmap-label" style="pointer-events:none">Flees</text>
+                      <circle cx="150" cy="88" r="16" class="cmap-node-accent demo-clickable" data-demo="shoftim" data-key="ev-victory"/>
+                      <text x="150" y="88" class="cmap-label" style="pointer-events:none">Victory</text>
+                    </svg>
+                  </div>
+                  <div class="demo-book-timeline">
+                    <div class="demo-map-title">📅 Book Progress</div>
+                    <svg class="book-timeline-svg" viewBox="0 0 190 68" xmlns="http://www.w3.org/2000/svg">
+                      <line x1="18" y1="30" x2="95" y2="30" class="tl-line-done"/>
+                      <line x1="95" y1="30" x2="135" y2="30" class="tl-line-pending"/>
+                      <line x1="135" y1="30" x2="172" y2="30" class="tl-line-far"/>
+                      <text x="18" y="16" class="tl-chapter">Ch.3</text>
+                      <text x="55" y="16" class="tl-chapter">Ch.3</text>
+                      <text x="95" y="16" class="tl-chapter">Ch.4</text>
+                      <text x="135" y="16" class="tl-chapter">Ch.6</text>
+                      <text x="172" y="16" class="tl-chapter">Ch.13</text>
+                      <circle cx="18" cy="30" r="8" class="tl-node-done demo-clickable" data-demo="shoftim" data-key="tl-othniel"/>
+                      <circle cx="55" cy="30" r="8" class="tl-node-done demo-clickable" data-demo="shoftim" data-key="tl-ehud"/>
+                      <circle cx="95" cy="30" r="10" class="tl-node-current demo-clickable" data-demo="shoftim" data-key="tl-deborah"/>
+                      <circle cx="135" cy="30" r="7" class="tl-node-pending demo-clickable" data-demo="shoftim" data-key="tl-gideon"/>
+                      <circle cx="172" cy="30" r="7" class="tl-node-far demo-clickable" data-demo="shoftim" data-key="tl-samson"/>
+                      <text x="18" y="50" class="tl-label">Othniel</text>
+                      <text x="55" y="50" class="tl-label">Ehud</text>
+                      <text x="95" y="50" class="tl-label tl-label-current">Deborah</text>
+                      <text x="135" y="50" class="tl-label tl-label-dim">Gideon</text>
+                      <text x="172" y="50" class="tl-label tl-label-far">Samson</text>
+                    </svg>
+                  </div>
+                </div>
+                <div class="demo-node-card" id="shoftimNodeCard" style="display:none">
+                  <button class="node-card-back" data-target="shoftimDiagramWrap">← back</button>
+                  <div class="node-card-title"></div>
+                  <div class="node-card-body"></div>
+                </div>
+                <div class="demo-comp-section">
+                  <div class="comp-label-row">
+                    <span>Comprehension</span>
+                    <span class="comp-pct">68%</span>
+                  </div>
+                  <div class="comp-bar-track">
+                    <div class="comp-bar-fill" style="width:68%"></div>
+                  </div>
+                  <div class="demo-read-stats">
+                    <span>📖 4 of 21 chapters</span>
+                    <span>⏱ ~30 min today</span>
+                  </div>
+                </div>
+              </div>
+              <div class="demo-chat-panel">
+                <div class="demo-book-text">
+                  <div class="passage-nav">
+                    <button class="passage-prev" data-demo="shoftim" title="Previous passage">←</button>
+                    <span class="passage-counter" id="shoftimCounter">§ 1 of 4</span>
+                    <button class="passage-next" data-demo="shoftim" title="Next passage">Next passage →</button>
+                  </div>
+                  <p class="demo-passage" id="shoftimPassage">"And the children of Israel again did evil in the sight of the LORD… and the LORD sold them into the hand of Jabin king of Canaan, who oppressed them mightily twenty years."</p>
+                  <span class="demo-source" id="shoftimSource">— Shoftim 4:1–3 · Ch. 4, §1</span>
+                </div>
+                <div class="demo-chat" id="shoftimChat">
+                  <div class="chat-msg tutor">
+                    <span class="chat-avatar">🤖</span>
+                    <div class="chat-bubble">
+                      <span class="chat-insight-tag">🔄 The cycle again</span>
+                      Notice the formula: sin → oppression → cry to God. You've seen this twice already — with Othniel and Ehud. Shoftim is building a deliberate <strong>pattern</strong>. What do you think the text is saying about human nature?
+                    </div>
+                  </div>
+                  <div class="chat-msg user">
+                    <div class="chat-bubble">That people forget lessons quickly?</div>
+                    <span class="chat-avatar">👤</span>
+                  </div>
+                  <div class="chat-msg tutor">
+                    <span class="chat-avatar">🤖</span>
+                    <div class="chat-bubble">
+                      <span class="chat-insight-tag">✅ Exactly</span>
+                      Yes — and the text doesn't judge them harshly. It just shows the pattern, relentlessly. Each judge brings rest, then the rest ends. This chapter introduces someone different though. Read on to meet her.
+                    </div>
+                  </div>
+                </div>
+                <div class="demo-input">
+                  <div class="demo-input-field" id="shoftimInputField">Ask about this passage...</div>
+                  <div class="demo-input-actions">
+                    <button class="demo-voice-btn" title="Voice mode">🎤</button>
+                    <button class="demo-send-btn" data-demo="shoftim" title="Send">→</button>
+                  </div>
                 </div>
               </div>
             </div>
