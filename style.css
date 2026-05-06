@@ -1724,6 +1724,71 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+
+  /* ===== Demo — stack diagrams above chat ===== */
+  .demo-split {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .demo-map-panel {
+    width: 100%;
+    min-width: 0;
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+    overflow-y: visible;
+    padding: 14px 16px;
+  }
+
+  .concept-map {
+    max-height: 200px;
+    width: 100%;
+  }
+
+  .demo-chat-panel {
+    height: 420px;
+  }
+
+  .demo-diagrams-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .demo-chapter-map,
+  .demo-book-timeline {
+    flex: 1;
+    min-width: 140px;
+  }
+
+  .demo-tabs {
+    gap: 4px;
+  }
+
+  .demo-tab {
+    font-size: 0.75rem;
+    padding: 5px 8px;
+  }
+
+  .passage-next {
+    font-size: 0.7rem;
+    padding: 3px 6px;
+  }
+
+  .solution-text {
+    text-align: left;
+  }
+
+  .solution-loop {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .loop-arrow {
+    transform: rotate(90deg);
+  }
+
+  /* ===== Nav ===== */
   .nav-links {
     display: none;
     position: absolute;
