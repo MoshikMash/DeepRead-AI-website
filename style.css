@@ -841,19 +841,33 @@ h1, h2, h3, h4, h5, h6 {
 
 .demo-split {
   display: flex;
-  height: 520px;
+  flex-direction: column;
+  height: auto;
 }
 
 .demo-map-panel {
-  width: 240px;
-  min-width: 240px;
-  border-right: 1px solid var(--color-border);
-  padding: 14px 12px;
+  width: 100%;
+  min-width: 0;
+  border-right: none;
+  border-bottom: 1px solid var(--color-border);
+  padding: 14px 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 10px;
   background: rgba(0, 0, 0, 0.15);
-  overflow-y: auto;
+  align-items: flex-start;
+  overflow: visible;
+}
+
+.demo-map-title {
+  flex: 0 0 100%;
+}
+
+.concept-map {
+  width: 180px;
+  flex-shrink: 0;
+  height: auto;
 }
 
 .demo-map-title {
@@ -1009,7 +1023,7 @@ h1, h2, h3, h4, h5, h6 {
 .tl-node-far      { fill: rgba(255,255,255,0.02); stroke: rgba(255,255,255,0.08); stroke-width: 1; stroke-dasharray: 2 2; }
 .tl-line-far      { stroke: rgba(255,255,255,0.05); stroke-width: 1; stroke-dasharray: 2 3; }
 
-.demo-diagrams-wrap { display: flex; flex-direction: column; gap: 10px; }
+.demo-diagrams-wrap { display: flex; flex-direction: row; flex: 1; gap: 16px; align-items: flex-start; min-width: 0; }
 
 .demo-node-card {
   border-top: 1px solid var(--color-border);
@@ -1044,7 +1058,8 @@ h1, h2, h3, h4, h5, h6 {
 .demo-clickable:hover { opacity: 0.75; }
 
 .demo-comp-section {
-  margin-top: 12px;
+  flex: 0 0 100%;
+  margin-top: 4px;
   padding-top: 10px;
   border-top: 1px solid var(--color-border);
 }
@@ -1079,11 +1094,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .demo-chat-panel {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 16px;
-  min-width: 0;
+  padding: 16px 20px;
+  height: 400px;
   overflow: hidden;
 }
 
@@ -1725,40 +1739,24 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
 
-  /* ===== Demo — stack diagrams above chat ===== */
-  .demo-split {
-    flex-direction: column;
-    height: auto;
-  }
-
+  /* ===== Demo — mobile adjustments ===== */
   .demo-map-panel {
-    width: 100%;
-    min-width: 0;
-    border-right: none;
-    border-bottom: 1px solid var(--color-border);
-    overflow-y: visible;
-    padding: 14px 16px;
+    padding: 12px 14px;
   }
 
   .concept-map {
-    max-height: 200px;
     width: 100%;
+    flex-shrink: 1;
+  }
+
+  .demo-diagrams-wrap {
+    flex-direction: column;
+    flex: 0 0 100%;
+    gap: 10px;
   }
 
   .demo-chat-panel {
     height: 420px;
-  }
-
-  .demo-diagrams-wrap {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .demo-chapter-map,
-  .demo-book-timeline {
-    flex: 1;
-    min-width: 140px;
   }
 
   .demo-tabs {
