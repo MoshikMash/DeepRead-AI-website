@@ -862,15 +862,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .demo-map-title {
   flex: 0 0 100%;
-}
-
-.concept-map {
-  width: 180px;
-  height: 180px;
-  flex-shrink: 0;
-}
-
-.demo-map-title {
   font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -879,8 +870,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .concept-map {
-  width: 100%;
-  height: auto;
+  width: 180px;
+  height: 180px;
+  flex-shrink: 0;
 }
 
 .node-edge {
