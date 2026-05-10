@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const demoPassages = {
     plato: [
       {
-        text: '"I was attached to this city by the god, as upon a great horse, somewhat sluggish because of its great size, and needing to be aroused by a sort of gadfly."',
+        text: '"I was attached to this city by the god, as upon a great horse, somewhat sluggish because of its great size, and needing to be aroused by a sort of gadfly. And I am that gadfly which the god has given to the state, and all day long and in all places am always fastening upon you, arousing and persuading and reproaching you. And as you will not easily find another like me, I would advise you to spare me."',
         source: '— Plato, Apology · Ch. 3, §1',
         chat: [
           { type: 'tutor', tag: '🔍 Metaphor alert', text: 'Socrates compares Athens to a large, sluggish horse — and himself to the gadfly sent by god to sting it awake. This is his defense of why he never stops questioning. Without the irritation, the horse just sleeps.' },
@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
       },
       {
-        text: '"The unexamined life is not worth living."',
+        text: '"Someone will say: And are you not ashamed, Socrates, of a course of life which is likely to bring you to an untimely end? To him I may fairly answer: There you are mistaken; a man who is good for anything ought not to calculate the chance of living or dying — he ought only to consider whether in doing anything he is doing right or wrong. The unexamined life is not worth living."',
         source: '— Plato, Apology · Ch. 3, §2',
         chat: [
           { type: 'tutor', tag: '🔗 Cross-chapter connection', text: 'This is the most quoted line in all of philosophy — but context matters. Socrates says this <em>at his own trial</em>, while facing death. He\'s not giving a lecture; he\'s refusing to stop philosophizing even to save his life.' },
@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
       },
       {
-        text: '"Men of Athens, I honor and love you; but I shall obey the god rather than you, and while I have life and strength I shall never cease from the practice and teaching of philosophy."',
+        text: '"Men of Athens, I honor and love you; but I shall obey the god rather than you, and while I have life and strength I shall never cease from the practice and teaching of philosophy, exhorting anyone whom I meet after my manner: O my friend — why do you care so much about laying up the greatest amount of money and honor and reputation, while you take so little care of wisdom and truth?"',
         source: '— Plato, Apology · Ch. 3, §3',
         chat: [
           { type: 'tutor', tag: '⚡ The climax', text: 'This is the most defiant moment in the Apology. He\'s not being reckless — he\'s making a precise hierarchy: divine command outranks civic authority. Notice he still says "I honor and love you." It\'s not rebellion; it\'s a higher loyalty.' },
@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
       },
       {
-        text: '"The difficulty is not so much to escape death as to escape doing wrong; for that runs faster than death."',
+        text: '"The difficulty, my friends, is not to avoid death, but to avoid unrighteousness — for that runs faster than death. I am old and move slowly, and the slower runner has overtaken me; my accusers are keen and quick, and the faster runner, wickedness, has overtaken them. And now I depart, condemned by you to death; they too go their ways, condemned by truth to wickedness and wrong."',
         source: '— Plato, Apology · Ch. 3, §4',
         chat: [
           { type: 'tutor', tag: '🎯 The closing argument', text: 'Socrates flips the framing completely. The jury thinks they\'ve won by sentencing him to death. He says: you\'ve given me the slower punishment. The faster one — moral corruption — you\'ve kept for yourselves.' },
@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ],
     shoftim: [
       {
-        text: '"And the children of Israel again did evil in the sight of the LORD… and the LORD sold them into the hand of Jabin king of Canaan, who oppressed them mightily twenty years."',
+        text: '"And the children of Israel again did evil in the sight of the LORD, when Ehud was dead. And the LORD sold them into the hand of Jabin king of Canaan, that reigned in Hazor; the captain of whose host was Sisera, which dwelt in Harosheth of the Gentiles. And the children of Israel cried unto the LORD: for he had nine hundred chariots of iron; and mightily he oppressed the children of Israel twenty years."',
         source: '— Shoftim 4:1–3 · Ch. 4, §1',
         chat: [
           { type: 'tutor', tag: '🔄 The cycle again', text: 'Notice the formula: sin → oppression → cry to God. You\'ve seen this twice already — with Othniel and Ehud. Shoftim is building a deliberate <strong>pattern</strong>. What do you think the text is saying about human nature?' },
@@ -293,8 +293,8 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
       },
       {
-        text: '"Now Deborah, a prophetess, the wife of Lapidoth, she judged Israel at that time. And she sat under the palm tree of Deborah… and the children of Israel came up to her for judgment."',
-        source: '— Shoftim 4:4–5 · Ch. 4, §2',
+        text: '"And Deborah, a prophetess, the wife of Lapidoth, she judged Israel at that time. And she dwelt under the palm tree of Deborah between Ramah and Beth-el in mount Ephraim: and the children of Israel came up to her for judgment. And she sent and called Barak the son of Abinoam, and said unto him: Hath not the LORD God of Israel commanded? Go up to mount Tabor with ten thousand men."',
+        source: '— Shoftim 4:4–6 · Ch. 4, §2',
         chat: [
           { type: 'tutor', tag: '👁 Pay attention to detail', text: 'Three roles in one verse: prophetess, wife, judge. She\'s the only judge in Shoftim introduced with all three. The text also gives her a <em>specific location</em> — the palm tree. Why do you think that detail matters?' },
           { type: 'user', text: 'It makes her authority feel real, grounded?' },
@@ -302,8 +302,8 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
       },
       {
-        text: '"And Deborah said unto Barak: \'Up; for this is the day in which the LORD hath delivered Sisera into thy hand.\' … And Barak went down from Mount Tabor."',
-        source: '— Shoftim 4:14 · Ch. 4, §3',
+        text: '"And Deborah said unto Barak: Up; for this is the day in which the LORD hath delivered Sisera into thine hand — is not the LORD gone out before thee? So Barak went down from mount Tabor, and ten thousand men after him. And the LORD discomfited Sisera, and all his chariots, and all his host, with the edge of the sword before Barak; so that Sisera lighted down off his chariot, and fled away on his feet."',
+        source: '— Shoftim 4:14–15 · Ch. 4, §3',
         chat: [
           { type: 'tutor', tag: '⚔️ The battle begins', text: 'Notice who gives the order. Barak has 10,000 men and is the general — but he waits for Deborah\'s word. The grammar is important: <em>she</em> declares the moment. <em>He</em> executes it. How does that split of roles feel to you?' },
           { type: 'user', text: 'Like she\'s the real commander and he\'s the instrument?' },
@@ -311,7 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
       },
       {
-        text: '"Then Yael came out to meet Sisera and said: \'Turn in, my lord, fear not.\' … And she covered him with a mantle… and he slept."',
+        text: '"Then Yael went out to meet Sisera and said: Turn in, my lord, turn in to me; fear not. And when he had turned in unto her into the tent, she covered him with a mantle. And he said: Give me, I pray thee, a little water to drink; for I am thirsty. And she opened a bottle of milk, and gave him drink, and covered him. And he said: Stand in the door of the tent, and it shall be, when any man doth come and enquire of thee, say, Is there any man here? that thou shalt say, No. Then Jael took a tent peg and a hammer in her hand… and he died."',
         source: '— Shoftim 4:18–21 · Ch. 4, §4',
         chat: [
           { type: 'tutor', tag: '🔗 Prophecy fulfilled', text: 'This is the payoff of Deborah\'s warning in 4:9 — "glory will go to a woman." Yael\'s power comes from hospitality law: Sisera trusts her because Kenites had peace with Jabin. He walks into her tent thinking he\'s safe.' },
